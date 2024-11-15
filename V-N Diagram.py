@@ -77,18 +77,11 @@ plt.xlabel('Airspeed, KEAS')
 plt.ylabel('Load factor, n')
 
 #Gust diagram
-
 mu_g = (2*WS_ratio)/(rho * C_la * MAC * 32.2)
 
 K = (0.88 * mu_g)/(5.3 + mu_g)
-'''
-a = (0.5*rho*C_Nmax)
-b = -(C_la * K * 48)/(498)
-c = -WS_ratio
-V_B = (-b + math.sqrt(b**2 - 4*a*c))/(2*a)      #V_B may not be less than the speed determined from the intersection of the C_N_max line and the gust line marked V_B, Roskam
-'''
 
-U_ref = (44-20.86)/(15000-60000) * (H - 15000) + 44    #Linearization from values given in CS-25.341 (a)(5)
+U_ref = (44-20.86)/(15000-60000) * (H - 15000) + 44            #Linearization from values given in CS-25.341 (a)(5)
 
 V_B = V_S * (1 + (K * U_ref * V_C * C_la)/(498*WS_ratio))**0.5  #Given by CS-25 book 1 
 
