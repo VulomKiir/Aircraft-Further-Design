@@ -10,7 +10,6 @@ def calc_Re(indicator, rho, V, l_wing, l_fus,l_eng, miu):
         Re = (rho * V * l_fus) / miu
     if indicator == 'e':
         Re = (rho * V * l_eng) / miu
-
     return Re
 
 def C_f(indicator, Re, M):
