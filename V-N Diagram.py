@@ -18,7 +18,7 @@ n_max = 2.5                     #Given our aircraft weight
 n_min = -1                      #Given our aircraft weight
 H = 39000                       #Altitude at cruise in ft
 
-C_Nmax = math.sqrt(C_Lmax**2 + (C_DatCLmax)**2 )
+C_Nmax = math.sqrt(C_Lmax**2 + (C_DatCLmax)**2 )            #Formulas from Roskam
 C_Nmin = -math.sqrt(C_Lmax_neg**2 + (C_DatCLmax_neg)**2 )
 
 #Speeds in feet
