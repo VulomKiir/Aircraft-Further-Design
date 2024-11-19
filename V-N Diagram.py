@@ -8,10 +8,10 @@ rho = 0.316  * 0.0624279606     #Density at cruise(lbs/ft^3)
 C_la = 4.87                     #Lift aoa slope (rad)
 MAC = 6.2 * 3.2808              #Mean Aerodynamic Chord length (ft)
 
-#Values read from graph in WP2
-C_Lmax = 2.066      
+#Values read from WP2
+C_Lmax = 1.63      
 C_DatCLmax = 0.0375
-C_Lmax_neg = -1.67
+C_Lmax_neg = -1.67 * 0.8        #Using DATCOM method together with graphs from WP2
 C_DatCLmax_neg = 0.035
 
 n_max = 2.5                     #Given our aircraft weight
