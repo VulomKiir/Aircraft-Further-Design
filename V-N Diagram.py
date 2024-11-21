@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #Using imperial units, graph is in KEAS
 WS_ratio = 6086 * 0.020885      #Weight to Wing area ratio (lbs/ft^2)
 rho = 0.316  * 0.0624279606     #Density at cruise(lbs/ft^3)
-C_la = 4.87                     #Lift aoa slope (rad)
+C_la = 4.456                    #Lift aoa slope (rad)
 MAC = 6.2 * 3.2808              #Mean Aerodynamic Chord length (ft)
 
 #Values read from graph in WP2
